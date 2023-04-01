@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT 4</title>
+    <script src="https://kit.fontawesome.com/53a811586b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    li{
+        list-style: none;
+        cursor: pointer;
+    }
+    body{
+        
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(220, 212, 228);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    button{
+        background-color: #8734c7;
+        padding: 4px 10px;
+        cursor: pointer;
+        color: aliceblue;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-weight: 700;
+        width: fit-content;
+    }
+    button:hover{
+        background-color: #fff;
+        color: black;
+        border: 1px solid black;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    a{
+        text-decoration: none;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        font-weight: 500;
+    }
+    header{
+        padding: 15px 0px;
+    }
+    nav .logo{
+        font-weight: 700;
+        font-size: 30px;
+    }
+    nav ul li:hover{
+        text-decoration: underline;
+        font-weight: 900;
+    }
+    .search{
+        display: flex;
+        gap: 35px;
+    }
+    input{
+        padding: 4px 10px;
+    }
+
+    .hero-section{
+        display: flex;
+       /* align-items: center; */
+    }
+
+    .hero-section-left{
+        width: 60%;
+        padding: 0 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 100px;
+    }
+    .hero-section-left h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+    .hero-section-left h1 span{
+        
+        font-weight: 900;
+        font-size: 2.5 rem;
+    }
+    .hero-section-left{
+        font-weight: 700;
+        font-size: 25px;
+        
+    }
+    .hero-section-right{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        align-items: center;
+        justify-content: center; 
+        gap: 10px;
+    }
+    .hero-section-right img{
+        height: 300px;
+        width: 300px;
+        border-radius: 50px;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        justify-content: space-around;
+    }
+    footer p{
+        font-weight: 600;
+    }
+    footer ul{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    span{
+        color: rgb(43, 129, 100);
+        font-family:  'Lobster', cursive;
+    }
+    i:hover{
+        transform: scale(1.6);
+        background-color: red;
+    }
+</style>
+</head>
+<body>
+    <!-- started header -->
+    <header>
+        <nav>
+            <!-- logo -->
+        <div class="logo">LOGO</div>
+        <ul>
+            <!-- menus -->
+            <li><a href="http://">HOME</a></li>
+            <li> <a href="http://">About</a></li>
+            <li><a href="http://">Contact</a></li>
+        </ul>
+        <!-- search area -->
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+        </nav>
+    </header>
+    <!-- hero section -->
+    <div class="hero-section">
+        <!-- left div content -->
+        <div class="hero-section-left">
+            <h1>Hello , I am a <span> Web Developer</span></h1>
+            <p>I am an aspiring <span> Full Stack Javascript Developer</span>,<br> who is currently working as a <span>Freelancer</span> for <br> <span> National and International Client.</span></p>
+        </div>
+        <!-- right div content -->
+        <div class="hero-section-right">
+        <img src="https://github.com/pwlive/fullstackwebdevelopment/blob/main/01%20Feb%202023%20%7C%20Project%20With%20Mock%20up%20with%20design%20-1/assets/avtar.png?raw=true" alt="Brand amb" >  
+        <!-- chat button -->
+        <div>
+            <button>Chat with us</button>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <!-- Footer text -->
+        <p>Copyright @ 2022 LOGO. ALL rights reserved.</p>
+        <ul style="list-style-type: none;">
+            <li> <i class="fa-brands fa-square-github"></i></li>
+            <li><i class="fa-brands fa-square-instagram"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+        </ul>
+    </footer>
+</body>
+</html>
